@@ -63,8 +63,7 @@ class ModelBiLSTM():
         prediction = self.model.predict(vector)
         res = np.argmax(prediction, axis=1)
         labels = ['Happy', 'Neutral', 'Sad', 'Anger']
-        res = labels[res]
-        return res
+        return labels[res],prediction[res]
 
 
 
