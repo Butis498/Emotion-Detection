@@ -1,4 +1,4 @@
-# **Final-Project : Speech and text classification for sentiment analysis**
+# **Final-Project: Speech and text classification for sentiment analysis**
 ## Introduction
 Text and speech classification models are the future in terms of mental health illness diagnosis as depression. According to the World Health Organization (WHO), 322 million people worldwide suffer from depression. The objective of this investigation is to analyze some of the newest models for classification to determine whether they are a good tool that doctors and therapists could use un a near future.  
 
@@ -38,3 +38,6 @@ To run this code is necessary to upload the [notebook]() to colab and add the [d
 
 ### BERT 
 To run this modelo you only need to open the [notebook](/ColabTrainingFiles/BERT/BERT_Training.ipynb) in colab and upload the [dataset](/ColabTrainingFiles/BERT/DATASET_PROYECTO_NLP.csv)
+
+### Predict with audio and text
+The necessary files to make some predictions are in the [ColabTrainingFiles](/ColabTrainingFiles/) folder. You need to download the files and run [main.py](/ColabTestingFiles/main.py) but for audio predictions it is necessary to have an environment with [bob.bio] (https://www.idiap.ch/software/bob/docs/bob/docs/stable/install.html) 
