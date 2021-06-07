@@ -5,7 +5,7 @@ Text and speech classification models are the future in terms of mental health i
 ## Methods
 ### Dataset
 
-For the datasets we used IEMOCAP that contains the audio files needed for speech analysis as well as its transcription, thanks to this features we were able to use this dataset for both speech and text analysis. We also used EmoDB dataset for speech analysis.
+For the datasets we used [IEMOCAP](https://www.kaggle.com/jamaliasultanajisha/iemocap-full) that contains the audio files needed for speech analysis as well as its transcription, thanks to this features we were able to use this dataset for both speech and text analysis. We also used [EmoDB](http://www.emodb.bilderbar.info/index-1280.html) dataset for speech analysis.
 
 ### Classification
 For speech analysis we used EmoAudioNet vectorizer method by extracting the MFCC vector from the audio this will later on pass on to a BiLSTM + Attention model whcich will generate a prediction.
@@ -30,11 +30,11 @@ This models can be used in the future for an acurrate sentiment classification t
 ## How to run the code
 
 ### BiLSTM + Attention
-In the ColabTrainingFiles folder we can find the BiLSTM + Att folder where you can find the code to train the model which could also be found on the PreTrainedModels folder. After you train the model with the Train.ipynb notebook two files will be generated, the best_model.h5 and the scaler.pickle files that will be necesary to test the model. In the ColabTestFiles you can find the necesary files to test the model which you need to run the main.py file which will ask you for inputs this inputs could be text, audio, or both to generate a prediction.
-### BERT + LSTM
-El dataset utilizado es IEMOCAP y se encuentra en la carpeta data--> text_audio.csv
-### BERT 
-El dataset para correr el clasificador de sentimientos se encuentra en el folder data-->DATASET_PROYECTO_NLP.csv el cual también pertenece al dataset de IEMOCAP.
+To process the audios it is necessary to follow the [installation tutorial](https://www.idiap.ch/software/bob/docs/bob/docs/stable/install.html), although it should be noted that it is only compatible with Linux and MacOS 
+In the [ColabTrainingFiles](/ColabTrainingFiles) folder we can find the [BiLSTM + Att](/ColabTrainingFiles/BiLSTM+Att) folder where you can find the code to train the model which could also be found on the [PreTrainedModels](/PreTrainedModels) folder. After you train the model with the Train.ipynb notebook two files will be generated, the best_model.h5 and the scaler.pickle files that will be necesary to test the model. In the ColabTestFiles you can find the necesary files to test the model which you need to run the main.py file which will ask you for inputs this inputs could be text, audio, or both to generate a prediction.
 
-In the next url we can find the checkpoint for the bert model
-checkpoints: https://drive.google.com/drive/folders/1r0hBIOWnKkLzQnUXplr5D_HPLFBCmSeT?usp=sharing
+### BERT + LSTM
+To run this code is necessary to upload the [notebook]() to colab and add the [dataset]()
+
+### BERT 
+To run this modelo you only need to open the [notebook](/ColabTrainingFiles/BERT/BERT_Training.ipynb) in colab and upload the [dataset](/ColabTrainingFiles/BERT/DATASET_PROYECTO_NLP.csv)
