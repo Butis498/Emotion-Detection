@@ -34,7 +34,7 @@ To process the audios it is necessary to follow the [installation tutorial](http
 In the [ColabTrainingFiles](/ColabTrainingFiles) folder we can find the [BiLSTM + Att](/ColabTrainingFiles/BiLSTM+Att) folder where you can find the code to train the model which could also be found on the [PreTrainedModels](/PreTrainedModels) folder. After you train the model with the Train.ipynb notebook two files will be generated, the best_model.h5 and the scaler.pickle files that will be necesary to test the model. In the ColabTestFiles you can find the necesary files to test the model which you need to run the main.py file which will ask you for inputs this inputs could be text, audio, or both to generate a prediction.
 
 ### BERT + LSTM
-To run this code is necessary to upload the [notebook]() to colab and add the [dataset]()
+To run this code is necessary to upload the [notebook](/ColabTrainingFiles/BERT+LSTM/BERT+LSTM.ipynb) to colab and add the [dataset](/ColabTrainingFiles/BERT+LSTM/text_audio.csv)
 
 ### BERT 
 To run this modelo you only need to open the [notebook](/ColabTrainingFiles/BERT/BERT_Training.ipynb) in colab and upload the [dataset](/ColabTrainingFiles/BERT/DATASET_PROYECTO_NLP.csv)
